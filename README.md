@@ -40,6 +40,7 @@ Dataset
 ![Kimia_farma_pages-to-jpg-0002](https://github.com/Hafiizherdian/PBI-Kimia-Farma-Big-Data-Analytics/assets/152409368/a0efc3d8-bf3e-456c-bed3-eaff9bf0a9da)
 
 GCP BigQuery https://console.cloud.google.com/bigquery?sq=328311511300:bc9dd7edf21447c0a91470b1d83b25d1
+Dashboard Performance Analytics https://lookerstudio.google.com/s/tqsjxqcfy4Q
 <details><summary><b>Show Query Tabel Analisa</b></summary>
 
     select transaksi.transaction_id, transaksi.date,KC.branch_id, KC.branch_name, KC.kota, KC.provinsi, KC.rating, transaksi.customer_name, inventory.product_id, inventory.product_name, product.price, transaksi.discount_percentage, transaksi.price - (transaksi.price * transaksi.discount_percentage) as nett_sales, transaksi.price * inventory.opname_stock as nett_profit, transaksi.rating rating_transaksi, KC.branch_id as total_transaksi,
